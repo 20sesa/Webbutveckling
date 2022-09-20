@@ -1,55 +1,63 @@
+.Flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Jag stal allting fram till keyframes från internet för att göra min slideshow. Jag må ha ändrat små saker
 */
-*{box-sizing:border-box}
 
-.AboutMeContainer{
-    background-color: gray;
-    text-align: center;
-    background-size: cover;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    border: 10px rebeccapurple;
-    
-}
-
-body,html{
-    height: 100%;
-}
-/* Skapar en hero image med text
-*/
+/* Skapar en hero image med text*/
 .hero-image {
     background-image: linear-gradient(rgba( 0,0,0,0.5),rgba(0,0,0,0.5)), url("trade routes.png");
-    height: 50%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    width: 100%;
 }
 
+/* Fixar med hur texten ser ut på hero bilden
+*/
 .hero-text{
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     font-size: x-large;
 }
 
+/* Ett id som ger "Hero texten" en vit färg för att bakgrunden var mörkare*/
+#herotext {
+    color: white;
+}
+
+.AboutMeContainer{
+    background-color: gray;
+    text-align: center;
+    background-size: auto;
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+}
+
+/* Lägger till max bredden samt fastställer containerns position*/
 .ProjectContainer{
     max-width: 1000px;
     position: relative;
     margin:auto;
 }
 
+/* Gör så att slideshowen visar någonting innan det "aktiveras" i javascript filen*/
 .Slide{
     display: none;
 }
 
+/* Lägger till vart knapparna som */
 .ClickLeft, .ClickRight{
     cursor: pointer;
-    position: absolute;
+    position: relative;
     top: 50%;
     width: auto;
     margin-top: -22px;
@@ -72,10 +80,10 @@ body,html{
 }
 
 .text{
-    color: #f2f2f2;
+    color:black;
     font-size: 15px;
     padding: 8px 12px;
-    position: absolute;
+    position: relative;
     bottom: 8px;
     width: 100%;
     text-align: center;
