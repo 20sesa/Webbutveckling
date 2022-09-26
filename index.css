@@ -1,68 +1,42 @@
+body{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+
 .Flex-container {
     display: flex;
     flex-direction: column;
 }
 
-/* Jag stal allting fram till keyframes från internet för att göra min slideshow. Jag må ha ändrat små saker
-*/
-
 /* Skapar en hero image med text*/
 .hero-image {
     background-image: linear-gradient(rgba( 0,0,0,0.5),rgba(0,0,0,0.5)), url("trade routes.png");
-    height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    width: 100%;
-}
-
-/* Fixar med hur texten ser ut på hero bilden
-*/
-.hero-text{
-    text-align: center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: x-large;
-}
-
-/* Ett id som ger "Hero texten" en vit färg för att bakgrunden var mörkare*/
-#herotext {
-    color: white;
+    font-size: 4vw;
 }
 
 .AboutMeContainer{
-    background-color: gray;
+    background-color: rgb(174, 34, 67);
     text-align: center;
     background-size: auto;
-    margin: auto;
-    width: 95%;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 4vw;
+    color: white;
 }
 
-/* Lägger till max bredden samt fastställer containerns position*/
-.ProjectContainer{
-    max-width: 1000px;
-    position: relative;
-    margin:auto;
-}
-
-/* Gör så att slideshowen visar någonting innan det "aktiveras" i javascript filen*/
+/* Gör så att slideshowen inte visar någonting innan det "aktiveras" i javascript filen*/
 .Slide{
     display: none;
 }
 
-/* Lägger till vart knapparna som */
 .ClickLeft, .ClickRight{
     cursor: pointer;
-    position: relative;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -82,7 +56,7 @@
 .text{
     color:black;
     font-size: 15px;
-    padding: 8px 12px;
+    padding: 8px 0px;
     position: relative;
     bottom: 8px;
     width: 100%;
@@ -121,10 +95,52 @@
     width: 70%;
 }
 
-h1{
-    color: black;
+.paragraf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    padding: 0em 2em;
 }
 
 p{
-    color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.hero-text{
+    text-align: center;
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    padding: 4vw;
+    border: solid;
+}
+
+textarea{
+    border: solid;
+}
+
+button{
+    margin: 1vw;
+    padding: 2vw;
+}
+
+.ContactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0em 10em;
 }
