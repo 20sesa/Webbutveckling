@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: monospace;
     margin: 0;
@@ -38,7 +42,7 @@ body{
     cursor: pointer;
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 40px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -55,7 +59,7 @@ body{
 
 .text{
     color:black;
-    font-size: 15px;
+    font-size: 4vw;
     padding: 8px 0px;
     position: relative;
     bottom: 8px;
@@ -125,7 +129,6 @@ form{
 }
 
 input{
-    padding: 4vw;
     border: solid;
 }
 
@@ -135,7 +138,7 @@ textarea{
 
 button{
     margin: 1vw;
-    padding: 2vw;
+    padding: 2em;
 }
 
 .ContactContainer{
@@ -144,3 +147,53 @@ button{
     justify-content: center;
     padding: 0em 10em;
 }
+
+.ProjektContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-size: 3vw;
+}
+
+#ContactHeader{
+    color: black;
+    font-size: 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Footer{
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.FooterText{
+    color: white;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.FooterButton{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.FooterButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
