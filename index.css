@@ -16,7 +16,7 @@ body{
 
 /* Skapar en hero image med text*/
 .hero-image {
-    background-image: linear-gradient(rgba( 0,0,0,0.5),rgba(0,0,0,0.5)), url("trade routes.png");
+    background-image: linear-gradient(rgba( 0,0,0,0.1),rgba(0,0,0,1)), url("trade routes.png");
     background-position: center;
     background-size: cover;
     font-size: 4vw;
@@ -130,10 +130,7 @@ form{
 
 input{
     border: solid;
-}
-
-textarea{
-    border: solid;
+    margin: 6px 0px;
 }
 
 button{
@@ -195,4 +192,8 @@ label{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#SubmitButton:hover{
+    background-color: #717171;
 }
