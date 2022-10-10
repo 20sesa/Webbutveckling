@@ -1,6 +1,8 @@
+/* Det här gör så att skärmen ser bättre ut när den åker upp till toppen igen efter man tryck på Top knappen*/
 html{
     scroll-behavior: smooth;
 }
+
 
 body{
     font-family: monospace;
@@ -14,7 +16,7 @@ body{
     flex-direction: column;
 }
 
-/* Skapar en hero image med text*/
+/* Skapar en hero image och ger texten på bilden en storlek som syns på både dator och mobil*/
 .hero-image {
     background-image: linear-gradient(rgba( 0,0,0,0.1),rgba(0,0,0,1)), url("trade routes.png");
     background-position: center;
@@ -22,8 +24,13 @@ body{
     font-size: 4vw;
 }
 
+/*Lägger röd färg på "about me" delen ger den dess svarta bakgrundsdel på toppen. 
+Lägger allt i mitten och centrerar texten.
+Gör text färgen vit och lägger allt i en flex som centrerar allting i "about me" delen
+Gör texten läsbar på både dator och mobil*/
 .AboutMeContainer{
     background-color: rgb(174, 34, 67);
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0),transparent);
     text-align: center;
     background-size: auto;
     display: flex;
@@ -38,6 +45,7 @@ body{
     display: none;
 }
 
+/*Stylar knapparna som ändrar bild på "slideshown".*/
 .ClickLeft, .ClickRight{
     cursor: pointer;
     color: black;
@@ -53,9 +61,11 @@ body{
     border-radius: 3px 0 0 3px;
 }
 
+
 .ClickLeft:hover, .ClickRight:hover{
     background-color: rgba( 0,0,0,0.8);
 }
+
 
 .text{
     color:black;
