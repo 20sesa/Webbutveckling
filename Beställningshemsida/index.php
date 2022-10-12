@@ -12,20 +12,28 @@
             $db = new PDO('mysql:host='.$db_host.';dbname='.$db_db, $db_user, $db_pass, $pdoparam);
             $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-            $statement = $db->prepare("SELECT * FROM contacts");
+            $sql_query = "SELECT * FROM contact";
+
+            $statement = $db->prepare($sql_query);
             $statement->execute();
             $result = $statement->fetchAll();
 
-            print_r($result)
             ?>
 
             <ol>
+                
                 <?php
                     for($i = 0; $i < count($result); $i++) {
-                        echo "<li>" . $result[$i]["name"] . "<li>";
+                ?>      
+                        <div class="output">
+                            <li><?= $result[$i]['name']?></li>
+                            <li><?= $result[$i]['gmail']?></li>
+                            <li><?= $result[$i]['contactmessage']?></li>
+                        </div>
+                        <?php
                     }
-
                 ?>
+                
             </ol>
         </div>
     </body>

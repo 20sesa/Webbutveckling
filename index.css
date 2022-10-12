@@ -3,7 +3,7 @@ html{
     scroll-behavior: smooth;
 }
 
-
+/*Jag tar bort margin och padding från body och gör texten mer läsbar för mer folk*/
 body{
     font-family: monospace;
     margin: 0;
@@ -61,12 +61,12 @@ Gör texten läsbar på både dator och mobil*/
     border-radius: 3px 0 0 3px;
 }
 
-
+/*Gör en hover funktion för knapparna som byter bilden på slideshown*/
 .ClickLeft:hover, .ClickRight:hover{
     background-color: rgba( 0,0,0,0.8);
 }
 
-
+/*Stylar texten under bilderna i slideshown*/ 
 .text{
     color:black;
     font-size: 4vw;
@@ -77,6 +77,7 @@ Gör texten läsbar på både dator och mobil*/
     text-align: center;
 }
 
+/*Stylar det små knapparna under slideshow bilderna som kan ändra på bilden om man klickar på dem*/
 .dot{
     cursor: pointer;
     height: 15px;
@@ -88,10 +89,12 @@ Gör texten läsbar på både dator och mobil*/
     transition: background-color 0.6s ease;
 }
 
+
 .active, .dot:hover{
     background-color: #717171;
 }
 
+/*Ger en fade animation till slideshowen när den byter bild*/
 .fade{
     animation-name: fade;
     animation-duration: 1.5s;
@@ -102,6 +105,7 @@ Gör texten läsbar på både dator och mobil*/
     to{opacity: 1;}
 }
 
+/*Centrerar bilder i min hemsida*/
 .ImageCenter{
     display: block;
     margin-left: auto;
@@ -109,6 +113,7 @@ Gör texten läsbar på både dator och mobil*/
     width: 70%;
 }
 
+/*Gör paragraf delarna i min about me page till flex och ger dem padding som håller dem i mitten*/
 .paragraf{
     display: flex;
     flex-direction: row;
@@ -117,11 +122,13 @@ Gör texten läsbar på både dator och mobil*/
     padding: 0em 2em;
 }
 
+/*Gör så att en paragraf tag inte kan muppa upp strukturen av min text som inte är en del av en klass*/
 p{
     display: flex;
     flex-direction: column;
     color: white;
 }
+
 
 .hero-text{
     text-align: center;
@@ -132,22 +139,20 @@ h1{
     color: white;
 }
 
+/*Strukturerar hur forms kommer vara*/
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/*Gör så att man ser kanten av inputsen och gör så att det är några pixlar ifrån varandra*/
 input{
     border: solid;
     margin: 6px 0px;
 }
 
-button{
-    margin: 1vw;
-    padding: 2em;
-}
-
+/*Strukturerar contact delen och lägger allt inuti den i centrum av skärmen*/
 .ContactContainer{
     display: flex;
     flex-direction: column;
@@ -155,6 +160,7 @@ button{
     padding: 0em 10em;
 }
 
+/*Strukturerar project delen*/
 .ProjektContainer{
     display: flex;
     flex-direction: row;
@@ -163,10 +169,12 @@ button{
     align-items: center;
 }
 
+
 label{
     font-size: 3vw;
 }
 
+/*Gör lite exklusiv struktur till contact delens header*/
 #ContactHeader{
     color: black;
     font-size: 6vw;
@@ -175,6 +183,7 @@ label{
     justify-content: center;
 }
 
+/*Stylar och strukturerar footern*/
 .Footer{
     background-color: black;
     background-size: cover;
@@ -183,6 +192,7 @@ label{
     flex-direction: column;
 }
 
+/*Gör texten på footern läsbar på mobiler också och strukturerar footer texten*/
 .FooterText{
     color: white;
     font-size: 3vw;
@@ -191,12 +201,14 @@ label{
     justify-content: center;
 }
 
+/*Ger en margin på knapparna så att det ligger lite bredvid varandra*/
 .FooterButton{
     display: flex;
     flex-direction: row;
     margin: 10px;
 }
 
+/*Strukturerar knapparna på footerns så att det ligger bredvid varandra på samma rad.*/
 .FooterButtons{
     display: flex;
     flex-direction: row;
