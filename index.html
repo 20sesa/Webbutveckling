@@ -2,19 +2,20 @@
     <head>
         <link rel="stylesheet" href="index.css">
         <script src="index.js"></script>
+        <script src="button.js"></script>
         
     </head>
     <body>
         <div class="Flex-container">
             <title>Sebastians Portfolie</title>
-            <div class="Hero-Image">
+            <div class="Hero-Image" id="Top">
                 <div class="Hero-Text">
                     <h1 class="Hero-text">Hello i am Sebastian</h1>
                     <h1 class="Hero-text">I am a programmer</h1>
                     <p class="Hero-text">Scroll down for more info</p>
                 </div>
             </div>
-            <div class="AboutMeContainer"> 
+            <div class="AboutMeContainer" id="AboutMe"> 
                 <h1> About me</h1>
                 <h2>Hello my name is Sebastian.</h2>
                 <div class="paragraf">
@@ -48,26 +49,28 @@
                     </p>
                 </div>
             </div>
-            <div class="ProjektContainer">
+            <div class="ProjektContainer" id="Slideshow">
+
+                <a class="ClickLeft" onclick="plusSlides(-1)">&#10094;</a>
                 <div class="Slide fade">
                     <div class="numbertext">1/3</div>
-                    <img src="Hemsidabild.png" class="ImageCenter">
+                        <img src="Hemsidabild.png" class="ImageCenter">
                     <div class="text">My first website</div>
                 </div>
 
                 <div class="Slide fade">
                     <div class="numbertext">2/3</div>
-                    <img src="Rheinuebung_Karte2.png" class="ImageCenter">
-                    <div class="text">project 2</div>
+                        <img src="Rheinuebung_Karte2.png" class="ImageCenter">
+                    <div class="text">Project 2</div>
                 </div>
 
                 <div class="Slide fade">
                     <div class="numbertext">3/3</div>
-                    <img src="Rheinuebung_Karte2.png" class="ImageCenter">
-                    <div class="text">project 3</div>
+                        <img src="Rheinuebung_Karte2.png" class="ImageCenter">
+                    <div class="text">Project 3</div>
                 </div>
 
-                <a class="ClickLeft" onclick="plusSlides(-1)">&#10094;</a>
+                
                 <a class="ClickRight" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <div style="text-align:center">
@@ -75,17 +78,29 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-            <div class="ContactContainer">
-                <form method="POST" action="">
-                    <label>Username:</label>
-                    <input type="text" name="username" placeholder="">
-                    <label>Email:</label>
-                    <input type="text" name="email" placeholder="">
+            <div class="ContactContainer" id="ContactContainer">
+                <h1 id="ContactHeader">Contact me</h1>
+                <form action="/Webbutveckling/form.php">
+                    <label>Name:</label>
+                    <input type="text" id="name" name="name" value="">
+                    <label>Gmail:</label>
+                    <input type="text" id="gmail" name="gmail" value="">
                     <label>Message:</label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <button> Submit </button>
-                </form>
-
+                    <input type="text" id="message" name="message" value="">
+                    <input type="submit" value="Submit" id="SubmitButton">
+                </form>   
+            </div>
+            <div class="Footer">
+                <footer class="Footer">
+                    <p class="FooterText">Author: Sebastian Saastamoinen</p>
+                    <p class="FooterText">My Gmail: Gargasmello@gmail.com</p>
+                    <div class="FooterButtons">
+                        <button onClick="TopFunction()" class="FooterButton" id="TopButton">To the top</button>
+                        <button class="FooterButton">To "About me"</button>
+                        <button class="FooterButton">To "Slideshow"</button>
+                        <button class="FooterButton">To "Contact me"</button>
+                    </div>
+                </footer>
             </div>
         </div>
     </body>
