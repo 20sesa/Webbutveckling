@@ -19,6 +19,7 @@ body{
     background-color: maroon;
     height: 100%;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .output{
@@ -26,11 +27,18 @@ body{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2px 2px;
+    margin: 10px;
+    border: solid;
+    border-color: cornsilk;
+    border-width: 5px;
 }
 
 li{
     margin: 10px 15px;
+}
+
+ul{
+    padding: 0%;
 }
  
 
