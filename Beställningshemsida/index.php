@@ -20,7 +20,7 @@
 
             ?>
 
-            <ol>
+            <ul>
                 
                 <?php
                     for($i = 0; $i < count($result); $i++) {
@@ -34,7 +34,7 @@
                     }
                 ?>
                 
-            </ol>
+            </ul>
         </div>
     </body>
 </html>
