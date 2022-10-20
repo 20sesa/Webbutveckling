@@ -150,6 +150,9 @@ form{
 input{
     border: solid;
     margin: 6px 0px;
+    height: 8vw;
+    font-size: 4vw;
+    
 }
 
 /*Strukturerar contact delen och lägger allt inuti den i centrum av skärmen*/
@@ -171,7 +174,7 @@ input{
 
 
 label{
-    font-size: 3vw;
+    font-size: 6vw;
 }
 
 /*Gör lite exklusiv struktur till contact delens header*/
@@ -190,6 +193,7 @@ label{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 /*Gör texten på footern läsbar på mobiler också och strukturerar footer texten*/
@@ -209,8 +213,10 @@ label{
     justify-content: center;
     align-items: center;
     padding: 50px;
+    font-size: 4vw;
 }
 
 #SubmitButton:hover{
     background-color: #717171;
 }
+

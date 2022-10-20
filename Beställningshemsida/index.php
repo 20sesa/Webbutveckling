@@ -26,9 +26,18 @@
                     for($i = 0; $i < count($result); $i++) {
                 ?>      
                         <div class="output">
-                            <li><?= $result[$i]['name']?></li>
-                            <li><?= $result[$i]['gmail']?></li>
-                            <li><?= $result[$i]['contactmessage']?></li>
+                            <div class="Name">
+                                <label>Name:</label>
+                                <li><?= $result[$i]['name']?></li>
+                            </div>    
+                            <div class="Email">
+                                <label>Email:</label>
+                                <li><?= $result[$i]['gmail']?></li>
+                            </div>
+                            <div class="Message">
+                                <label>Message:</label>
+                                <li><?= $result[$i]['contactmessage']?></li>
+                            </div>
                         </div>
                         <?php
                     }
